@@ -1,0 +1,79 @@
+@media (max-width: 1100px) {
+  .members-list {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991px) {
+  body { font-size: 14px; }
+
+  .sp-break { display: block; }
+
+  .text-small { font-size: 12px; }
+
+  .page-container { padding-top: 60px; }
+
+  .page-header { height: 60px; position: fixed; top: 0; left: 0; width: 100%; background: #fff; z-index: 2; }
+  .page-header .logo { width: 160px; top: 20px; left: 20px; }
+  #sp-menu-button { display: block; }
+  .page-header .page-menus { position: absolute; width: 100%; top: 60px; display: none; }
+  .page-header .page-menus.show { display: block; }
+  .page-header .page-menus li { display: block; background: #3bb6ba; }
+  .page-header .page-menus li a { display: block; padding: 20px; border-bottom: 1px solid #58c1c4; color: #fff; }
+
+  .page-top { background-size: 100%; background-position: center bottom; }
+  .page-top .text { text-align: center; }
+  .page-top .text p:nth-child(1) { font-size: 42px; margin-top: 40px; }
+  .page-top .text p:nth-child(2) { font-size: 24px; }
+  .page-top .text p:nth-child(3) { font-size: 16px; margin-bottom: 30px; }
+
+  .button { height: 46px; line-height: 46px; font-size: 16px; padding: 0 40px; }
+  .button.white .icon.mail,
+  .button .icon.mail { width: 21px; height: 21px; background-size: 21px; margin-right: 10px; }
+
+
+  .section-title { font-size: 28px; }
+  .section-sub-title { font-size: 16px; text-align: left; }
+  .section.no-height .section-content ul li { display: none; }
+  .section.no-height .section-content ul li:first-child { display: block; }
+  .section.no-height .section-content h2 { margin: 0px; }
+  .section.no-height .section-content ul li a .date,
+  .section.no-height .section-content ul li a .title { display: block; width: 100%; }
+
+  .section.about .image { float: none; width: 100%; height: auto; background: none; }
+  .section.about .image img { width: 100%; height: auto; display: block; }
+  .section.about .content { float: none; max-width: 100%; margin: 0 auto 60px auto; }
+
+  .services-list .service-item { margin-bottom: 30px; }
+  .services-list .service-item .title { margin-bottom: 0; }
+
+  .customer-reviews .item .image { width: 68px; height: 68px; float: none; margin: 0 auto 30px auto; }
+
+  .cards-flow { padding: 0 10px; text-align: center; }
+  .cards-flow .card { width: 48%; margin-right: 4%; margin-bottom: 46px; }
+  .cards-flow .card:nth-child(2n) { margin-right: 0; }
+  .cards-flow .card:last-child { display: inline-block; margin: 0; }
+
+  .contact-form { max-width: 100%; }
+  .contact-form .form-group .label { text-align: center; }
+
+  .table-info { margin-top: 20px; }
+  .table-info tr,
+  .table-info tr td { display: block; text-align: center; border-width: 1px; }
+  .table-info tr { margin-bottom: 20px; }
+  .table-info tr td { padding: 5px 20px 20px; }
+  .table-info tr td:first-child{ width: 100%; border: none; padding: 0; }
+
+  .member-modal { width: 280px; }
+  .member-modal .profile-picture { height: 140px; }
+  .member-modal .avatar { top: 75px; }
+  .member-modal .info p { height: 180px; overflow-y: scroll; margin-bottom: 0; }
+  .member-modal .info { padding: 105px 20px 20px 20px; }
+  .modal a.close-modal { position: absolute; right: 0; top: -60px; }
+
+  .card-show-sp       { display: block; text-align: center; }
+  .card-show-sp .card { display: inline-block; width: 50%; }
+  .cards-flow .card:last-child { display: none; }
+
+}
