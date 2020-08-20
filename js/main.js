@@ -3,8 +3,10 @@ $(document).ready(function () {
 
   $.get('https://blog.tomosia.com/feed-1.json', function (data) {
     var blogItems = data.items
+    var length = blogItems.length
+    if (length > 5) length = 5
     var html = ''
-    for (var i = 0; i < blogItems.length; i++) {
+    for (var i = 0; i < length; i++) {
       html +=
         '<li>' +
         '<a href="' + blogItems[i].url + '" target="_blank" title="' + blogItems[i].title + '">' +
