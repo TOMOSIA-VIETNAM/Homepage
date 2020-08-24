@@ -29,6 +29,8 @@
   .page-top .text p:nth-child(3) { font-size: 16px; margin-bottom: 30px; }
 
   .button { height: 46px; line-height: 46px; font-size: 16px; padding: 0 40px; }
+  .button.submit { width: 260px; height: 60px; }
+  .button.notice-contact { width: 260px; height: 67px; padding: 0; line-height: 60px; }
   .button.white .icon.mail,
   .button .icon.mail { width: 21px; height: 21px; background-size: 21px; margin-right: 10px; }
 
@@ -75,5 +77,15 @@
   .card-show-sp       { display: block; text-align: center; }
   .card-show-sp .card { display: inline-block; width: 50%; }
   .cards-flow .card:last-child { display: none; }
+
+  #contact .section-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .break-line::after {
+    content: "\A";
+    white-space: pre;
+  }
 
 }
