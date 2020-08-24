@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+  jQuery.validator.addMethod("laxEmail", function(value, element) {
+    // allow any non-whitespace characters as the host part
+    return this.optional( element ) || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( value );
+  }, 'Please enter a valid email address.');
+
   var contactForm = $('#contact-form')
 
   $.get('https://blog.tomosia.com/feed-1.json', function (data) {
@@ -24,12 +30,11 @@ $(document).ready(function () {
     onclick: false,
     rules: {
       "entry.1785710538": {
-        required: true,
-        maxlength: 10
+        required: true
       },
       "entry.896262367": {
         required: true,
-        email: true
+        laxEmail: true
       },
       "entry.422070178": {
         required: true
