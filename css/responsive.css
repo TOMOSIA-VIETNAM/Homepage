@@ -22,7 +22,7 @@
   .page-header .page-menus li { display: block; background: #3bb6ba; }
   .page-header .page-menus li a { display: block; padding: 20px; border-bottom: 1px solid #58c1c4; color: #fff; }
 
-  .page-top { background-size: 100%; background-position: center bottom; }
+  .page-top { background-size: 72%; background-position: right bottom; }
   .page-top .text { text-align: center; }
   .page-top .text p:nth-child(1) { font-size: 42px; margin-top: 40px; }
   .page-top .text p:nth-child(2) { font-size: 24px; }
@@ -89,3 +89,22 @@
   }
 
 }
+
+
+@media (max-width: 768px) {
+  .page-top {
+      background-size: 80%;
+    }
+}
+
+@media (max-width: 667px) {
+.page-top {
+    background-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-top {
+      background-size: 100%;
+    }
+  }
