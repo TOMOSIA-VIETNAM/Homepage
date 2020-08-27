@@ -102,6 +102,9 @@ $(document).ready(function () {
   })
 
   function scrollTo(to) {
-    $('html, body').animate({scrollTop: $(to).offset().top}, 'slow');
+    var windowWidth = ($(window).width());
+    var scrollTop = $(to).offset().top;
+    if (windowWidth < 992) scrollTop -= 50;
+    $('html, body').animate({scrollTop: scrollTop}, 'slow');
   }
 })
