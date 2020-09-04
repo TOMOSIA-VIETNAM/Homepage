@@ -10,18 +10,19 @@ $(document).ready(function () {
   $.get('https://blog.tomosia.com/feed-1.json', function (data) {
     var blogItems = data.items
     var length = blogItems.length
-    if (length > 5) length = 5
-    var html = ''
-    for (var i = 0; i < length; i++) {
-      html +=
-        '<li>' +
-        '<a href="' + blogItems[i].url + '" target="_blank" title="' + blogItems[i].title + '">' +
-        '<span class="date"> - ' + blogItems[i].date_published + '</span>' +
-        '<span class="title">' + blogItems[i].title.trim() + '</span>' +
-        '</a>' +
-        '</li>';
+    if (length > 10) length = 10
+    var html_1 = ''
+    for (var i = 0; i < 5; i++) {
+      html_1 += renderBlogItem(blogItems[i])
     }
-    $('.blogs ul').html(html)
+
+    var html_2 = ''
+    for (var i = 5; i < length; i++) {
+      html_2 += renderBlogItem(blogItems[i])
+    }
+
+    $('#blogs-1 ul').html(html_1)
+    $('#blogs-2 ul').html(html_2)
   })
 
   var validator = contactForm.validate({
@@ -106,5 +107,15 @@ $(document).ready(function () {
     var scrollTop = $(to).offset().top;
     if (windowWidth < 992) scrollTop -= 50;
     $('html, body').animate({scrollTop: scrollTop}, 'slow');
+  }
+
+  function renderBlogItem(blogItem) {
+    str = '<li>' +
+    '<a href="' + blogItem.url + '" target="_blank" title="' + blogItem.title + '">' +
+    '<span class="date"> - ' + blogItem.date_published + '</span>' +
+    '<span class="title">' + blogItem.title.trim() + '</span>' +
+    '</a>' +
+    '</li>';
+    return str;
   }
 })

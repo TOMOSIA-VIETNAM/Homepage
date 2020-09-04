@@ -1,4 +1,3 @@
-<!doctype html>
 <html class="no-js" lang="">
 
 <head>
@@ -79,47 +78,15 @@
       <div class="section-content">
         <div class="col-md-6">
           <div class="news">
-            <h2>News</h2>
-            <ul>
-              <li>
-                <a href="">
-                  <span class="date"> - 2020.07.02</span>
-                  <span class="title">テキストはダミーですテキストはダミーです</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span class="date"> - 2020.07.02</span>
-                  <span class="title">歌県よ材現試当サア鳴消イロウワ部最エウ</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span class="date"> - 2020.07.02</span>
-                  <span class="title">りぎご速対ムサニハ年負メ財張つぱな変朝提</span>
-                </a>
-              </li>
-              <li>
-                <a href="" title="探く市部シコ共段せちび下気く森予リニ書系ん度楽ぞ英季サソ万温筋">
-                  <span class="date"> - 2020.07.02</span>
-                  <span class="title">探く市部シコ共段せちび下気く森予リニ書系ん度楽ぞ英季サソ万温筋</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span class="date"> - 2020.07.02</span>
-                  <span class="title">テキストはダミーですテキストはダミーです</span>
-                </a>
-              </li>
-            </ul>
-            <p class="mt-1 text-center">
-              <a href="" class="button x-small green-border rounded">> more</a>
-            </p>
+            <div class="blogs" id="blogs-1">
+              <h2>Tech blogs</h2>
+              <ul></ul>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="blogs">
-            <h2>Tech blogs</h2>
+          <div class="blogs" id="blogs-2" >
+            <h2>&nbsp;</h2>
             <ul></ul>
             <p class="mt-1 text-center">
               <a href="https://blog.tomosia.com"
@@ -242,35 +209,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card black-border">
-              <h3 class="title text-center">お客様の声</h3>
-              <div class="pr-4 pl-4">
-                <div class="customer-reviews owl-carousel">
-                  <div class="item">
-                    <div class="image">
-                      <img src="img/customers/customer-1.jpg" width="68" height="68" alt="A.G.Smith, CTO/CIO, ARRIBA Co.,Ltd. 様">
-                    </div>
-                    <p>
-                      今までお仕事をさせて頂いた海外の方の中で、群を抜いて対応スキルも技術力も高かったです。今後も発注したいと思ってます。
-                    </p>
-                    <p class="text-right text-small">A.G.Smith, CTO/CIO, ARRIBA Co.,Ltd. 様</p>
-                  </div>
-                  <div class="item">
-                    <div class="image">
-                      <img src="img/customers/customer-2.jpg" width="68" height="68" alt="Ohashi, Digital Axe Co., Ltd. 様">
-                    </div>
-                    <p>
-                      今までお仕事をさせて頂いた海外の方の中で、群を抜いて対応スキルも技術力も高かったです。今後も発注したいと思ってます。
-                    </p>
-                    <p class="text-right text-small">Ohashi, Digital Axe Co., Ltd. 様</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- {% include customer.html %} -->
+        <!-- Replace by _includes/customer.html -->
       </div>
     </div>
     <div class="pb-6"></div>
@@ -416,35 +356,36 @@
     <div class="container">
       <div class="members-list owl-carousel">
         <div class="item">
-          <a href="#member-1" rel="modal:open" class="image">
+          <!-- <a href="#member-1" rel="modal:open" class="image"> -->
+          <a href="#member-1" class="image">
             <img src="img/members/member-1.jpg">
           </a>
           <div class="name">Luu Tuan Anh</div>
           <div class="position">CEO</div>
         </div>
         <div class="item">
-          <a href="#member-2" rel="modal:open" class="image">
+          <a href="#member-2" class="image">
             <img src="img/members/member-2.jpg">
           </a>
           <div class="name">Dang Van Luan</div>
           <div class="position">COO</div>
         </div>
         <div class="item">
-          <a href="#member-3" rel="modal:open" class="image">
+          <a href="#member-3" class="image">
             <img src="img/members/member-3.jpg">
           </a>
           <div class="name">Keisuke Mizuno</div>
           <div class="position">Technical Advisor</div>
         </div>
         <div class="item">
-          <a href="#member-4" rel="modal:open" class="image">
+          <a href="#member-4" class="image">
             <img src="img/members/member-4.jpg">
           </a>
           <div class="name">Nguyen Tuan Anh</div>
           <div class="position">BRSE</div>
         </div>
         <div class="item">
-          <a href="#member-5" rel="modal:open" class="image">
+          <a href="#member-5" class="image">
             <img src="img/members/member-5.jpg">
           </a>
           <div class="name">Le Thu Ha</div>
@@ -558,86 +499,8 @@
   </header>
 
   <!-- MEMBER MODALS -->
-  <div id="member-1" class="modal member-modal">
-    <div class="profile-picture">
-      <img src="img/members/member-bg-1.png">
-    </div>
-    <div class="avatar">
-      <img src="img/members/member-1.jpg">
-    </div>
-    <div class="info">
-      <div class="name text-center">Luu Tuan Anh</div>
-      <div class="position text-center">CEO</div>
-      <p class="mt-2">
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです <br>
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです
-      </p>
-    </div>
-  </div>
-  <div id="member-2" class="modal member-modal">
-    <div class="profile-picture">
-      <img src="img/members/member-bg-1.png">
-    </div>
-    <div class="avatar">
-      <img src="img/members/member-2.jpg">
-    </div>
-    <div class="info">
-      <div class="name text-center">Dang Van Luan</div>
-      <div class="position text-center">COO</div>
-      <p class="mt-2">
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです <br>
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです
-      </p>
-    </div>
-  </div>
-  <div id="member-3" class="modal member-modal">
-    <div class="profile-picture">
-      <img src="img/members/member-bg-1.png">
-    </div>
-    <div class="avatar">
-      <img src="img/members/member-3.jpg">
-    </div>
-    <div class="info">
-      <div class="name text-center">Keisuke Mizuno</div>
-      <div class="position text-center">Technical Advisor</div>
-      <p class="mt-2">
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです <br>
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです
-      </p>
-    </div>
-  </div>
-  <div id="member-4" class="modal member-modal">
-    <div class="profile-picture">
-      <img src="img/members/member-bg-1.png">
-    </div>
-    <div class="avatar">
-      <img src="img/members/member-4.jpg">
-    </div>
-    <div class="info">
-      <div class="name text-center">Nguyen Tuan Anh</div>
-      <div class="position text-center">BRSE</div>
-      <p class="mt-2">
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです <br>
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです
-      </p>
-    </div>
-  </div>
-  <div id="member-5" class="modal member-modal">
-    <div class="profile-picture">
-      <img src="img/members/member-bg-1.png">
-    </div>
-    <div class="avatar">
-      <img src="img/members/member-5.jpg">
-    </div>
-    <div class="info">
-      <div class="name text-center">Le Thu Ha</div>
-      <div class="position text-center">Comtor</div>
-      <p class="mt-2">
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです <br>
-        テキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーですテキストはダミーです
-      </p>
-    </div>
-  </div>
+  <!-- {% include modal.html %} -->
+  <!-- Replace by _includes/modal.html -->
 
   <a id="page-top-button" href="javascript:void(0)">
     <img src="img/icons/arrow-top@2x.png" width="21" height="30" alt=""> <br>
