@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-  jQuery.validator.addMethod("laxEmail", function(value, element) {
+  jQuery.validator.addMethod("laxEmail", function (value, element) {
     // allow any non-whitespace characters as the host part
-    return this.optional( element ) || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( value );
+    return this.optional(element) || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
   }, 'Please enter a valid email address.');
 
   var contactForm = $('#contact-form')
@@ -60,9 +60,15 @@ $(document).ready(function () {
     margin: 20,
     nav: true,
     responsive: {
-      0: {items: 1},
-      600: {items: 2},
-      1000: {items: 2}
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 2
+      }
     }
   }
   $('.customer-reviews').owlCarousel(options)
@@ -73,10 +79,18 @@ $(document).ready(function () {
     margin: 30,
     nav: true,
     responsive: {
-      0: {items: 1},
-      600: {items: 2},
-      1000: {items: 3},
-      1200: {items: 4},
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      },
+      1200: {
+        items: 4
+      },
     }
   })
 
@@ -106,16 +120,18 @@ $(document).ready(function () {
     var windowWidth = ($(window).width());
     var scrollTop = $(to).offset().top;
     if (windowWidth < 992) scrollTop -= 50;
-    $('html, body').animate({scrollTop: scrollTop}, 'slow');
+    $('html, body').animate({
+      scrollTop: scrollTop
+    }, 'slow');
   }
 
   function renderBlogItem(blogItem) {
     str = '<li>' +
-    '<a href="' + blogItem.url + '" target="_blank" title="' + blogItem.title + '">' +
-    '<span class="date"> - ' + blogItem.date_published + '</span>' +
-    '<span class="title">' + blogItem.title.trim() + '</span>' +
-    '</a>' +
-    '</li>';
+      '<a href="' + blogItem.url + '" target="_blank" title="' + blogItem.title + '">' +
+      '<span class="date"> - ' + blogItem.date_published + '</span>' +
+      '<span class="title">' + blogItem.title.trim() + '</span>' +
+      '</a>' +
+      '</li>';
     return str;
   }
 })
