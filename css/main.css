@@ -639,10 +639,12 @@ body {
   border-radius: 150px;
   margin-bottom: 20px;
   display: inline-block;
-  cursor: pointer;
+  cursor: default;
   overflow: hidden;
 }
-.members-list .item .image:hover { opacity: 0.7; }
+.members-list .item .image:hover {
+  opacity: 0.7;
+}
 .members-list .item .name { font-weight: 700; font-size: 18px; }
 .member-modal { position: relative; padding: 0; max-width: 420px; box-shadow: none; }
 .member-modal .profile-picture { height: 210px; border-radius: 8px 8px 0 0; overflow: hidden; }
