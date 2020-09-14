@@ -607,9 +607,16 @@ body {
 .customer-reviews .item .image { width: 68px; height: 68px; border-radius: 68px; overflow: hidden; float: left; margin-right: 20px; }
 
 .section.about { padding: 0; }
-.section.about .image { width: 50%; height: 1100px; float: left; background: url(../img/about/left@2x.png); background-size: cover; }
-.section.about .image img { display: none; }
-.section.about .content { padding: 0 34px; width: 550px; max-width: 50%; float: left; }
+.section.about .image { 
+  width: 100%;
+  height: calc(100vh);
+  background-image: url(../img/about/company-trip.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.section.about .content { padding: 0 34px; width: 550px; max-width: 50%; float: left; }*/
 .section.about .section-sub-title {
   text-align: left;
   margin-bottom: 40px;
@@ -621,6 +628,10 @@ body {
 .table-info tr td {
   border-bottom: 2px solid #3bb6ba;
   padding: 20px;
+}
+
+.table-info tr:last-child td {
+  border-bottom: none;
 }
 
 .section.members {
