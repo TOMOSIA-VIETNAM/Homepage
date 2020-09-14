@@ -679,6 +679,7 @@ body {
 .member-modal .name { font-size: 18px; font-weight: 700; }
 
 .samples-list .item .title { color: #3bb6ba; text-transform: uppercase; text-align: center; }
+.samples-list .item .title br { display: none; }
 .sample-image { width: 50%; float: left; padding: 20px; }
 .sample-image img { width: 100%; }
 .sample-description { width: 50%; float: left; padding: 0 20px; }

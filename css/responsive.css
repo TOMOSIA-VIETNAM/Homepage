@@ -1,4 +1,5 @@
 @media (max-width: 1100px) {
+  .samples-list,
   .members-list {
     max-width: 80%;
     margin: 0 auto;
@@ -93,8 +94,14 @@
 
 @media (max-width: 768px) {
   .page-top {
-      background-size: 80%;
-    }
+    background-size: 80%;
+  }
+  .samples-list .item .title br { display: inline-block; }
+  .samples-list .item .sample-description,
+  .samples-list .item .sample-image {
+    width: 100%;
+    float: none;
+  }
 }
 
 @media (max-width: 667px) {
