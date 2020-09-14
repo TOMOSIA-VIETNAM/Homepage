@@ -677,6 +677,11 @@ body {
 }
 .member-modal .info { padding: 90px 30px 40px 30px; }
 .member-modal .name { font-size: 18px; font-weight: 700; }
+
+.samples-list .item .title { color: #3bb6ba; text-transform: uppercase; text-align: center; }
+.sample-image { width: 50%; float: left; padding: 20px; }
+.sample-image img { width: 100%; }
+.sample-description { width: 50%; float: left; padding: 0 20px; }
 /* ==========================================================================
    CARD
    ========================================================================== */
@@ -791,6 +796,10 @@ body {
 .members-list.owl-carousel button.owl-prev { font-size: 50px; color: #58c1c4; margin-top: -40px; }
 .members-list.owl-carousel .owl-nav button.owl-prev { left: -30px; }
 .members-list.owl-carousel .owl-nav button.owl-next { right: -30px; }
+.samples-list.owl-carousel .owl-nav button.owl-prev { left: -30px; }
+.samples-list.owl-carousel .owl-nav button.owl-next { right: -30px; }
+.samples-list.owl-carousel button.owl-next,
+.samples-list.owl-carousel button.owl-prev { font-size: 50px; color: #58c1c4; margin-top: -40px; }
 
 .modal { box-shadow: none; }
 
