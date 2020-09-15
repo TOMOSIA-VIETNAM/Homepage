@@ -683,6 +683,10 @@ body {
 .sample-image { width: 50%; float: left; padding: 20px; }
 .sample-image img { width: 100%; }
 .sample-description { width: 50%; float: left; padding: 0 20px; }
+
+.tech-list { list-style: none; text-align: center; padding: 0; margin: 0; }
+.tech-list .item { display: inline-block; width: 170px; text-align: center; margin-bottom: 20px; white-space: nowrap; }
+.tech-list .item img { height: 80px; width: auto; }
 /* ==========================================================================
    CARD
    ========================================================================== */
