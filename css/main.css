@@ -568,21 +568,21 @@ body {
 }
 
 .services-list .service-item.white-box {
-  box-shadow: 0px 0px 10px 0px rgba(168, 207, 212, 0.5);
   margin-bottom: 30px;
   border-radius: 7px;
+  border: 2px solid #fff;
 }
 
 .services-list .service-item.white-box h2 {
   font-size: 18px;
   line-height: 65px;
-  color: #3bb6ba;
-  border-bottom: 2px solid #3bb6ba;
+  color: #fff;
+  border-bottom: 2px solid #fff;
   margin: 0;
 }
 
 .services-list .service-item.white-box p {
-  color: #32787e;
+  color: #fff;
   font-size: 16px;
   padding: 15px 25px;
   height: 200px;
