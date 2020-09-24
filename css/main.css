@@ -299,6 +299,7 @@ body {
 .mb-4 { margin-bottom: 40px; }
 .mt-6 { margin-top: 60px; }
 .mb-6 { margin-bottom: 60px; }
+.p-0 { padding: 0; }
 
 .text-small { font-size: 14px; }
 
@@ -505,8 +506,6 @@ body {
   width: calc(100% - 30px);
   top: -50px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(168, 207, 212, 0.5);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(168, 207, 212, 0.5);
   box-shadow: 0px 0px 10px 0px rgba(168, 207, 212, 0.5);
 }
 
@@ -567,18 +566,39 @@ body {
   text-align: center;
 }
 
+.services-list .service-item.white-box {
+  box-shadow: 0px 0px 10px 0px rgba(168, 207, 212, 0.5);
+  margin-bottom: 30px;
+  border-radius: 7px;
+}
+
+.services-list .service-item.white-box h2 {
+  font-size: 18px;
+  line-height: 65px;
+  color: #3bb6ba;
+  border-bottom: 2px solid #3bb6ba;
+  margin: 0;
+}
+
+.services-list .service-item.white-box p {
+  color: #32787e;
+  font-size: 16px;
+  padding: 15px 25px;
+  height: 200px;
+}
+
 .services-list .service-item .image {
   height: 80px;
 }
 
 .services-list .service-item .title {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   display: inline-block;
   width: 100%;
-  line-height: 40px;
   border: 2px solid #fff;
   border-radius: 3px;
+  padding: 6px;
 }
 
 .services-list .service-item p {
@@ -620,6 +640,15 @@ body {
 .section.about .section-sub-title {
   text-align: left;
   margin-bottom: 40px;
+}
+.section.about .button.block {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.table-info {
+  max-width: 650px;
+  margin: 0 auto;
 }
 .table-info tr td:first-child {
   width: 110px;
@@ -685,7 +714,7 @@ body {
 .sample-description { width: 50%; float: left; padding: 0 20px; }
 
 .tech-list { list-style: none; text-align: center; padding: 0; margin: 0; }
-.tech-list .item { display: inline-block; width: 170px; text-align: center; margin-bottom: 20px; white-space: nowrap; }
+.tech-list .item { display: inline-block; width: 170px; text-align: center; margin-bottom: 30px; white-space: nowrap; }
 .tech-list .item img { height: 80px; width: auto; }
 /* ==========================================================================
    CARD
