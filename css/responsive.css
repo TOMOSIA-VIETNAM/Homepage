@@ -107,18 +107,23 @@
     max-width: 750px;
   }
 
+  .samples-list .item .title br { display: inline-block; }
+  .samples-list .item .sample-description {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .samples-list .item .sample-description,
+  .samples-list .item .sample-image {
+    width: 100%;
+    float: none;
+  }
+
 }
 
 
 @media (max-width: 768px) {
   .page-top {
     background-size: 80%;
-  }
-  .samples-list .item .title br { display: inline-block; }
-  .samples-list .item .sample-description,
-  .samples-list .item .sample-image {
-    width: 100%;
-    float: none;
   }
 }
 
