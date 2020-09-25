@@ -713,6 +713,17 @@ body {
 .sample-image { width: 50%; float: left; padding: 20px; }
 .sample-image img { width: 100%; }
 .sample-description { width: 50%; float: left; padding: 0 20px; }
+.sample-description .links { margin-top: 30px; }
+.sample-description .links a {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
 
 .tech-list { list-style: none; text-align: center; padding: 0; margin: 0; }
 .tech-list .item { display: inline-block; width: 170px; text-align: center; margin-bottom: 30px; white-space: nowrap; }
