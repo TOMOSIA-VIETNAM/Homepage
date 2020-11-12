@@ -270,6 +270,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #293536;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -365,8 +366,6 @@ body {
 /* ==========================================================================
    PAGE TOP
    ========================================================================== */
-
-.page-container{ overflow-x: hidden;}
 
 .page-top {
   padding-bottom: 250px;
@@ -526,7 +525,7 @@ body {
 }
 
 .section.no-height .section-content {
-  height: 300px;
+  height: 320px;
   border-radius: 20px;
   padding: 25px 30px;
   position: absolute;
@@ -540,7 +539,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   color: #3bb6ba;
-  margin: 0 0 15px 0;
+  margin: 0 0 25px 0;
 }
 
 .section.no-height .section-content ul {
