@@ -27,6 +27,7 @@
 
   .page-header { height: 60px; position: fixed; top: 0; left: 0; width: 100%; background: #fff; z-index: 2; }
   .page-header .logo { width: 160px; top: 20px; left: 20px; }
+  .page-header .container{ width: 100%;}
   #sp-menu-button { display: block; }
   .page-header .page-menus { position: absolute; width: 100%; top: 60px; display: none; }
   .page-header .page-menus.show { display: block; }
@@ -120,6 +121,11 @@
 
 }
 
+@media (max-width: 1124px){
+  .services-list .service-item .title{
+    height: 60px;
+  }
+}
 
 @media (max-width: 768px) {
   .page-top {
