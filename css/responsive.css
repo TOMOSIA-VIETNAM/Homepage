@@ -68,8 +68,11 @@
   .cards-flow .card:nth-child(2n) { margin-right: 0; }
   .cards-flow .card:last-child { display: inline-block; margin: 0; }
 
-  .contact-form { max-width: 100%; }
-  .contact-form .form-group .label { text-align: center; }
+  .contact-form { max-width: 100%;}
+  .contact-form .form-group { display: flex;}
+  .contact-form .form-group .label { text-align: left; width: 30%;}
+  .contact-form .form-group .input { width: 70%; }
+  .contact-form .form-group .input select option {width: 50%;}
 
   .table-info { margin-top: 20px; }
   .table-info tr,
@@ -140,4 +143,8 @@
     height: 220px;
   }
   .page-top .text{ text-align: center;}
+  .contact-form{ max-width: 100%;}
+  .contact-form .form-group{ display: block;}
+  .contact-form .form-group .label { text-align: left; width: 100%;}
+  .contact-form .form-group .input { width: 100%; }
 }
