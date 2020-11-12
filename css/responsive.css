@@ -74,13 +74,6 @@
   .contact-form .form-group .input { width: 70%; }
   .contact-form .form-group .input select option {width: 50%;}
 
-  .table-info { margin-top: 20px; }
-  .table-info tr,
-  .table-info tr td { display: block; text-align: center; border-width: 1px; }
-  .table-info tr { margin-bottom: 20px; }
-  .table-info tr td { padding: 5px 20px 20px; }
-  .table-info tr td:first-child{ width: 100%; border: none; padding: 0; }
-
   .member-modal { width: 280px; }
   .member-modal .profile-picture { height: 140px; }
   .member-modal .avatar { top: 75px; }
@@ -143,8 +136,16 @@
     height: 220px;
   }
   .page-top .text{ text-align: center;}
+
   .contact-form{ max-width: 100%;}
   .contact-form .form-group{ display: block;}
   .contact-form .form-group .label { text-align: left; width: 100%;}
   .contact-form .form-group .input { width: 100%; }
+
+  .table-info { margin-top: 20px; }
+  .table-info tr,
+  .table-info tr td { display: block; text-align: center; border-width: 1px; }
+  .table-info tr { margin-bottom: 20px; }
+  .table-info tr td { padding: 5px 20px 20px; }
+  .table-info tr td:first-child{ width: 100%; border: none; padding: 0; }
 }
