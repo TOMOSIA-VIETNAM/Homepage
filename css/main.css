@@ -344,7 +344,7 @@ body {
 /* ==========================================================================
    PAGE HEADER
    ========================================================================== */
-.page-header { height: 105px; }
+.page-header { height: 105px; position: sticky; background: #fff; top: 0; z-index: 999999;}
 .page-header .container { position: relative; }
 .page-header .logo { width: 200px; display: inline-block; position: absolute; left: 0; top: 40px; }
 .page-header .logo img { width: 100%; }
@@ -368,10 +368,11 @@ body {
 .page-top {
   padding-bottom: 250px;
   background-image: url(../img/page-top/background@2x.png);
-  background-size: 1012px;
-  background-position: bottom right;
+  background-size: cover;
+  background-position: top right;
   background-repeat: no-repeat;
 }
+.page-top .text{ padding: 0 20px; }
 
 .page-top .text p:nth-child(1) {
   font-size: 68px;
@@ -435,7 +436,7 @@ body {
    SECTIONS
    ========================================================================== */
 .section {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .section-title {
@@ -455,6 +456,17 @@ body {
   left: 50%;
   position: absolute;
   margin-left: -13px;
+}
+.title-flow:after{
+  content: "";
+  display: block;
+  width: 26px;
+  height: 10px;
+  background: url('../img/icons/smile@2x.png');
+  background-size: 26px;
+  left: 50%;
+  position: absolute;
+  margin-left: 13px;
 }
 
 .section-sub-title {
@@ -554,7 +566,6 @@ body {
 
 .section.services {
   padding-top: 280px;
-  padding-bottom: 120px;
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -575,10 +586,10 @@ body {
 
 .services-list .service-item.white-box h2 {
   font-size: 18px;
-  line-height: 65px;
+  line-height: 40px;
   color: #fff;
   border-bottom: 2px solid #fff;
-  margin: 0;
+  margin: 10px;
 }
 
 .services-list .service-item.white-box p {
