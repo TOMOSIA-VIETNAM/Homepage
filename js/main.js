@@ -7,6 +7,10 @@ $(document).ready(function () {
 
   var contactForm = $('#contact-form')
 
+
+  var coppyRight = `© ${new Date().getFullYear()} TOMOSIA VIET NAM CO., LTD. ALL RIGHTS RESERVED.`
+
+  document.getElementById('copyright').innerHTML = coppyRight
   $.get('https://blog.tomosia.com/feed-1.json', function (data) {
     var blogItems = data.items
     var length = blogItems.length
@@ -43,7 +47,28 @@ $(document).ready(function () {
     }
   })
 
-  contactForm.submit(function () {
+  contactForm.submit(function (e) {
+
+    e.preventDefault();
+    const data = {
+      "entry.454830066": $("input[name='entry.454830066']").val(),
+      "entry.973282293": $("input[name='entry.973282293']").val(),
+      "entry.1549936741": $("input[name='entry.1549936741']").val(),
+      "entry.1707599136": $("textarea[name='entry.1707599136']").val(),
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSeEyD7kobNfFUpOmLS7_vIqMFJ2dFPG0AbY2-0lamXcxspQ/formResponse",
+      data: data,
+      dataType: "json",
+      encode: true
+    }).done(function(data) {
+      $(".response")
+          .empty()
+          .append(JSON.stringify(data, null, 2));
+    });
+
     if (validator.valid()) {
       validator.resetForm()
       contactForm[0].reset()
