@@ -51,10 +51,10 @@ $(document).ready(function () {
 
     e.preventDefault();
     const data = {
-      "entry.454830066": $("input[name='entry.454830066']").val(),
-      "entry.973282293": $("input[name='entry.973282293']").val(),
-      "entry.1549936741": $("input[name='entry.1549936741']").val(),
-      "entry.1707599136": $("textarea[name='entry.1707599136']").val(),
+      "entry.1785710538": $("input[name='entry.1785710538']").val(),
+      "entry.1265817817": $("input[name='entry.1265817817']").val(),
+      "entry.896262367": $("input[name='entry.896262367']").val(),
+      "entry.422070178": $("textarea[name='entry.422070178']").val(),
     };
 
     $.ajax({
