@@ -51,6 +51,7 @@ $(document).ready(function () {
 
     e.preventDefault();
     const data = {
+      "entry.1884483019": $('select[name="entry.1884483019"]').val(),
       "entry.1785710538": $("input[name='entry.1785710538']").val(),
       "entry.1265817817": $("input[name='entry.1265817817']").val(),
       "entry.896262367": $("input[name='entry.896262367']").val(),
